@@ -173,7 +173,7 @@
     top: -30px;
     left: -30px;
     background: lightskyblue;
-    transform: rotateZ(45deg)
+    transform: rotateZ(45deg);
 }
 
 @media print{
