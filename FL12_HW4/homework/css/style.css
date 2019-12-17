@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #777;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    width: 100%;
+}
+
+.headerWrap {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    height: 85px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.navBar ul {
+    display: flex;
+}
+
+.navBar ul li {
+    list-style: none;
+    margin-right: 56px;
+}
+
+.navItem {
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+}
+
+.navItem:hover {
+    color: #cac583;
+}
+
+.main {
+    margin-top: 85px;
+}
+
+.homeView {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/home-bg.jpg) no-repeat top/cover;
+    height: calc(100vh - 85px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.welcomeMessage h1 {
+    color: #fff;
+    font-size: 72px;
+    margin: 0;
+}
+
+.welcomeMessage p {
+    color: #c2bc43;
+    letter-spacing: 2px;
+}
+
+.btn {
+    height: 45px;
+    padding: 0 24px;
+    border-radius: 23px;
+    color: #777;
+    font-size: 17px;
+    margin-top: 34px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+.blogItem {
+    margin: 70px 0;
+}
+
+.blogImage {
+    max-width: 960px;
+    width: 100%;
+}
+
+.blogHeader {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.blogDetail {
+    display: flex;
+}
+
+.blogDetail p {
+    margin-right: 25px;
+}
+
+.authorPhoto {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.blogDescription {
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+.footer {
+    background: #000;
+    height: 350px;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.leftFooter {
+    width: 45%;
+}
+
+.leftFooter p {
+    line-height: 28px;
+}
+
+.rightFooter {
+    width: 45%;
+}
