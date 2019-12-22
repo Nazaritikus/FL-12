@@ -1,0 +1,342 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0b192f;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #024161;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.sandwich {
+    display: none;
+}
+
+.logo h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.logo span {
+    color: #d22367;
+}
+
+.navigation {
+    height: 100%;
+}
+
+.menuItem {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    padding: 38px 20px;
+}
+
+.menuItem:hover {
+    background: #1f52a4;
+}
+
+.post-0 {
+    background: bottom / cover no-repeat url(../img/post0.jpg);
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.post-0-Content {
+    position: absolute;
+    width: 70%;
+    bottom: 36px;
+    left: 42px;
+}
+
+.post-0 h1 {
+    font-size: 53px;
+    font-weight: 100;
+    margin-bottom: 24px;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts {
+    width: 75%;
+}
+
+.postGeneral {
+    display: flex;
+}
+
+.postImg {
+    width: calc(50% - 4px);
+    object-fit: cover;
+}
+
+.postText {
+    padding: 0 30px;
+    position: relative;
+}
+
+.postText h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 55px;
+    margin-bottom: 0;
+}
+
+.postText p {
+    line-height: 25px;
+}
+
+.post-1 {
+    background: #9d27b0;
+    position: relative;
+}
+
+.post-1 .postText::after {
+    content: "07 \A mar";
+    white-space: pre;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.post-1 .postText:hover,
+.post-1 .postImg:hover {
+    background: #9d27b0;
+    opacity: 0.5;
+}
+
+.post-2 {
+    background: #9bb800;
+    text-align: end;
+    position: relative;
+}
+
+.post-2 .postText::before {
+    content: "06 \A mar";
+    white-space: pre;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.post-2 .postText:hover,
+.post-2 .postImg:hover {
+    background: #9bb800;
+    opacity: 0.5;
+}
+
+.post-3 {
+    background: #ed5120;
+    position: relative;
+}
+
+.post-3 .postText::after {
+    content: "04 \A mar";
+    white-space: pre;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.post-3 .postText:hover,
+.post-3 .postImg:hover {
+    background: #ed5120;
+    opacity: 0.5;
+}
+
+.post-4 {
+    background: #9d27b0;
+    text-align: end;
+    position: relative;
+}
+
+.post-4 .postText::before {
+    content: "01 \A mar";
+    white-space: pre;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.post-4 .postText:hover,
+.post-4 .postImg:hover {
+    background: #9d27b0;
+    opacity: 0.5;
+}
+
+.post-5 {
+    background: #2d95bb;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.post-5::after {
+    content: "27 \A feb";
+    white-space: pre;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    opacity: 0.1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.post-5 .postText:hover {
+    background: #2d95bb;
+    opacity: 0.5;
+}
+
+.news {
+    width: 23%;
+    height: 100%;
+}
+
+.new {
+    margin-bottom: 20px;
+    background: #ffffff;
+    color: #000;
+}
+
+.new img {
+    width: 100%;
+}
+
+.newContent {
+    padding: 5px 10px;
+}
+
+.newContent h2,
+.newContent p {
+    font-weight: 100;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #024161;
+    padding: 20px 20px;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .sandwich {
+        display: block;
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .postGeneral {
+        flex-direction: column;
+    }
+
+    .postImg {
+        width: 100%;
+    }
+
+    .post-2 .postImg,
+    .post-4 .postImg {
+        order: 1;
+    }
+
+    .post-2 .postText,
+    .post-4 .postText {
+        order: 2;
+        text-align: start;
+    }
+
+    .post-2 .postText::before,
+    .post-4 .postText::before {
+        left: auto;
+        right: 10px;
+    }
+
+    .post-5::after {
+        top: auto;
+        right: 45%;
+        bottom: 0;
+    }
+
+    .post-5 .postText {
+        margin-bottom: 100px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .postText h2 {
+        font-size: 2rem;
+    }
+
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .posts,
+    .news {
+        width: 100%;
+    }
+}
