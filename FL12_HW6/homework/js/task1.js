@@ -5,11 +5,11 @@ let disc = null;
 let value1 = null;
 let value2 = null;
 
-let a = prompt(introMessage + ' a:');
+let a = Math.round(prompt(introMessage + ' a:'));
 console.log(a);
-let b = prompt(introMessage + ' b:');
+let b = Math.round(prompt(introMessage + ' b:'));
 console.log(b);
-let c = prompt(introMessage + ' c:');
+let c = Math.round(prompt(introMessage + ' c:'));
 console.log(c);
 
 if (isNaN(a) || a.length === 0 ||
